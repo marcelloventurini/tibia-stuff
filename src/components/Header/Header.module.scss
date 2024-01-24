@@ -1,0 +1,24 @@
+@import '../../styles/variables';
+
+.header {
+  display: flex;
+  align-items: center;
+  height: 140px;
+  background-image: url('../../assets/images/Banner.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  &__menu {
+    max-width: 1440px;
+    margin: auto $margin-l;
+
+    ul {
+      display: flex;
+      gap: $margin-s;
+    }
+  }
+
+  a {
+    font-weight: 500;
+  }
+}
