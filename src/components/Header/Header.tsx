@@ -1,5 +1,5 @@
-import { Link } from 'react-router-dom'
 import styles from './Header.module.scss'
+import MenuLink from './MenuLink/MenuLink'
 
 export default function Header() {
   return (
@@ -7,10 +7,10 @@ export default function Header() {
       <nav className={styles.header__menu}>
         <ul>
           <li>
-            <Link to={'/'}>Início</Link>
+            <MenuLink route='/'>Início</MenuLink>
           </li>
           <li>
-            <Link to={'/guia-vocacoes'}>Guia Vocações</Link>
+            <MenuLink route='/guia-vocacoes'>Guia Vocações</MenuLink>
           </li>
         </ul>
       </nav>
