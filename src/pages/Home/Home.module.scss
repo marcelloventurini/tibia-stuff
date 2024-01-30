@@ -7,14 +7,14 @@
   justify-content: space-between;
   flex-wrap: wrap;
 
-  &__news {
+  .news {
     background-color: #0f0;
     width: 780px;
     min-width: 55%;
     height: 400px;
   }
 
-  &__boosted {
+  .boosted {
     background-color: #00f;
     width: 340px;
     min-width: 35%;
