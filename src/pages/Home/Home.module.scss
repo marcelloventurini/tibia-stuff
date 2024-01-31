@@ -3,7 +3,7 @@
 .container {
   display: flex;
   padding: $margin-l;
-  gap: 16px;
+  gap: $margin-xs;
   justify-content: space-between;
   flex-wrap: wrap;
 }
