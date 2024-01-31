@@ -13,31 +13,49 @@ interface News {
 }
 
 export default function NewsPreview() {
-  const [news, setNews] = useState<News>()
+  const [news, setNews] = useState<News | null>(null)
 
-  async function getLastNews(): Promise<number> {
-    const data = await fetch('https://api.tibiadata.com/v4/news/latest')
-    const news = await data.json()
-    const lastNews = news.news.pop()
+  async function getLastNews(): Promise<number | null> {
+    try {
+      const data = await fetch('https://api.tibiadata.com/v4/news/latest')
+      const newsList = await data.json()
 
-    return lastNews.id
+      const sortedNews = newsList.news.sort((a: News, b: News) => {
+        return new Date(b.date).getTime() - new Date(a.date).getTime()
+      })
+
+      const lastNews = sortedNews[0]
+
+      return lastNews ? lastNews.id : null
+    } catch (error) {
+      console.error('Erro ao obter notícias:', error)
+      return null
+    }
   }
 
   async function getLastNewsContent() {
-    const id = await getLastNews()
-    const data = await fetch(`https://api.tibiadata.com/v4/news/id/${id}`)
-    const news = await data.json()
+    try {
+      const id = await getLastNews()
 
-    setNews(news.news)
+      if (id) {
+        const data = await fetch(`https://api.tibiadata.com/v4/news/id/${id}`)
+        const newsContent = await data.json()
+
+        setNews(newsContent.news)
+      }
+    } catch (error) {
+      console.error('Erro ao obter conteúdo da notícia:', error)
+    }
   }
 
   useEffect(() => {
     getLastNewsContent()
-  })
+  }, [])
 
   return (
     <section className={styles.news}>
       <h2>News</h2>
+      <h3>{news?.title}</h3>
       <div>{news?.content}</div>
     </section>
   )
