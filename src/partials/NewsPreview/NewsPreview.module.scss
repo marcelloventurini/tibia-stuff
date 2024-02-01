@@ -2,7 +2,18 @@
 
 .news {
   background-color: #0f0;
+  padding: $margin-s;
   width: 780px;
   min-width: 55%;
-  height: 400px;
+  height: fit-content;
+}
+
+.title {
+  font-size: $title;
+}
+
+.subtitle {
+  font-size: $subtitle;
+  margin-top: $margin-s;
+  margin-bottom: $margin-xs;
 }
