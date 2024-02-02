@@ -1,11 +1,10 @@
 @import '../../styles/variables';
 
 .news {
-  background-color: #0f0;
+  background-color: #ff0;
   padding: $margin-s;
-  width: fit-content;
-  min-width: 45%;
-  height: fit-content;
+  width: 33%;
+  // height: fit-content;
 }
 
 .title {

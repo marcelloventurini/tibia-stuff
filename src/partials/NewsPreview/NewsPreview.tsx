@@ -56,7 +56,7 @@ export default function NewsPreview() {
     <section className={styles.news}>
       <h2 className={styles.title}>News</h2>
       <h3 className={styles.subtitle}>{news?.title}</h3>
-      <div className={styles.content}>{news?.content}</div>
+      {/* <div className={styles.content}>{news?.content}</div> */}
     </section>
   )
 }

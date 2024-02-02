@@ -2,21 +2,20 @@
 
 .boosted {
   display: flex;
-  gap: 16px;
+  flex-wrap: wrap;
+  gap: 32px;
 }
 
 .boostedBoss {
   background-color: #00f;
   padding: $margin-s;
   width: 340px;
-  min-width: 25%;
 }
 
 .boostedCreature {
   background-color: #0f0;
   padding: $margin-s;
   width: 340px;
-  min-width: 25%;
 }
 
 .creature {
