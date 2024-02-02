@@ -1,8 +1,29 @@
 @import '../../styles/variables';
 
 .boosted {
+  display: flex;
+  gap: 16px;
+}
+
+.boostedBoss {
   background-color: #00f;
+  padding: $margin-s;
   width: 340px;
-  min-width: 35%;
-  height: 500px;
+  min-width: 25%;
+}
+
+.boostedCreature {
+  background-color: #0f0;
+  padding: $margin-s;
+  width: 340px;
+  min-width: 25%;
+}
+
+.creature {
+  margin-top: $margin-s;
+}
+
+.subtitle {
+  font-size: $subtitle;
+  margin-bottom: $margin-xs;
 }
