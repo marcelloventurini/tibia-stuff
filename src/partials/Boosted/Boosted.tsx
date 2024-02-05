@@ -44,8 +44,10 @@ export default function Boosted() {
     <section className={styles.boosted}>
       <div className={styles.boostedBoss}>
         <h3 className={styles.subtitle}>Boss do Dia</h3>
-        <h4>{boostedBoss?.name}</h4>
-        <img src={boostedBoss?.image_url} alt={boostedBoss?.name} />
+        <div className={styles.container}>
+          <img src={boostedBoss?.image_url} alt={boostedBoss?.name} />
+          <h4>{boostedBoss?.name}</h4>
+        </div>
       </div>
 
       <div className={styles.boostedCreature}>

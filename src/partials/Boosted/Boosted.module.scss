@@ -7,15 +7,26 @@
 }
 
 .boostedBoss {
-  background-color: #00f;
+  // background-color: #00f;
   padding: $margin-s;
-  width: 340px;
+  width: 384px;
 }
 
 .boostedCreature {
-  background-color: #0f0;
+  // background-color: #0f0;
   padding: $margin-s;
-  width: 340px;
+  width: 384px;
+}
+
+.container {
+  display: flex;
+  background-image: url('../../assets/images/Boosted_Creature_Pedestal_Crop.gif');
+  background-repeat: no-repeat;
+
+  h4 {
+    line-height: 64px;
+    margin-left: 32px;
+  }
 }
 
 .creature {
