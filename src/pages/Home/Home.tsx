@@ -1,11 +1,11 @@
-import Boosted from '../../partials/Boosted/Boosted'
+import BoostedSection from '../../partials/BoostedSection/BoostedSection'
 import NewsPreview from '../../partials/NewsPreview/NewsPreview'
 import styles from './Home.module.scss'
 
 export default function Home() {
   return (
     <div className={styles.container}>
-      <Boosted />
+      <BoostedSection />
       <NewsPreview />
     </div>
   )
