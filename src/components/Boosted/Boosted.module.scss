@@ -1,9 +1,11 @@
 @import '../../styles/variables';
 
-.boostedBoss {
-  // background-color: #00f;
+.boosted {
   padding: $margin-s;
   width: 384px;
+  background-image: url('../../assets/images/Boosted_Background.png');
+  background-repeat: no-repeat;
+  border-radius: 16px;
 }
 
 .container {
