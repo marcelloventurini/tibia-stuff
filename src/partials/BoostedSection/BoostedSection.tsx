@@ -41,19 +41,30 @@ export default function BoostedSection() {
     getBoostedCreature()
   })
 
+  if (!boostedBoss && !boostedCreature)
+    return <p>Erro ao carregar dados da API.</p>
+
   return (
     <section className={styles.boosted}>
-      <Boosted
-        image={boostedBoss?.image_url}
-        name={boostedBoss?.name}
-        type={'Boss'}
-      />
-      
-      <Boosted
-        image={boostedCreature?.image_url}
-        name={boostedCreature?.name}
-        type={'Criatura'}
-      />
+      {boostedBoss ? (
+        <Boosted
+          image={boostedBoss?.image_url}
+          name={boostedBoss?.name}
+          type={'Boss'}
+        />
+      ) : (
+        'Erro ao carregar Boss do dia'
+      )}
+
+      {boostedCreature ? (
+        <Boosted
+          image={boostedCreature?.image_url}
+          name={boostedCreature?.name}
+          type={'Criatura'}
+        />
+      ) : (
+        'Erro ao carregar Criatura do dia'
+      )}
     </section>
   )
 }
