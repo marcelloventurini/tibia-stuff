@@ -43,7 +43,17 @@ export default function BoostedSection() {
 
   return (
     <section className={styles.boosted}>
-      <Boosted image={boostedBoss?.image_url} name={boostedBoss?.name} />
+      <Boosted
+        image={boostedBoss?.image_url}
+        name={boostedBoss?.name}
+        type={'Boss'}
+      />
+      
+      <Boosted
+        image={boostedCreature?.image_url}
+        name={boostedCreature?.name}
+        type={'Criatura'}
+      />
     </section>
   )
 }
