@@ -1,18 +1,14 @@
 @import '../../styles/variables';
 
 .news {
-  background-color: #ff0;
   padding: $margin-s;
   width: 340px;
-  // height: fit-content;
+  background-image: url('../../assets/images/News_Background.png');
+  border: 1px solid #1a1a1a;
+  border-radius: 16px;
 }
 
 .title {
-  font-size: $title;
-}
-
-.subtitle {
   font-size: $subtitle;
-  margin-top: $margin-s;
   margin-bottom: $margin-xs;
 }
