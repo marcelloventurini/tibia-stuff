@@ -1,6 +1,12 @@
 import styles from './Boosted.module.scss'
 
-export default function Boosted({ image, name, type }) {
+interface BoostedProps {
+  image: string
+  name: string
+  type: string
+}
+
+export default function Boosted({ image, name, type }: BoostedProps) {
   return (
     <div className={styles.boostedBoss}>
       <h3 className={styles.subtitle}>{type} do dia</h3>
