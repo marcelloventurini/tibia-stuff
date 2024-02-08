@@ -8,7 +8,7 @@ interface BoostedProps {
 
 export default function Boosted({ image, name, type }: BoostedProps) {
   return (
-    <div className={styles.boosted}>
+    <div>
       <h3 className={styles.subtitle}>{type} do dia</h3>
       <div className={styles.container}>
         <img src={image} alt={name} />

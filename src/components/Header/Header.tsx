@@ -10,7 +10,7 @@ export default function Header() {
             <MenuLink route='/'>Início</MenuLink>
           </li>
           <li>
-            <MenuLink route='/guia-vocacoes'>Guia Vocações</MenuLink>
+            <MenuLink route='/mundos'>Mundos</MenuLink>
           </li>
         </ul>
       </nav>
