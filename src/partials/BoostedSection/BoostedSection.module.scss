@@ -1,7 +1,12 @@
 @import '../../styles/variables';
 
 .boosted {
+  background-image: url('../../assets/images/Boosted_Background.png');
+  background-repeat: no-repeat;
+  padding: $margin-m;
   display: flex;
-  flex-wrap: wrap;
-  gap: 32px;
+  flex-direction: column;
+  gap: $margin-m;
+  border-radius: 16px;
+  border: 1px solid #111;
 }
