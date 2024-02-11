@@ -8,5 +8,6 @@
   flex-direction: column;
   gap: $margin-m;
   border-radius: 16px;
-  border: 1px solid #111;
+  width: 288px;
+  max-width: 288px;
 }

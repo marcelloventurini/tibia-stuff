@@ -1,18 +1,21 @@
 @import '../../styles/variables';
 
-.container {
-  display: flex;
-  background-image: url('../../assets/images/Boosted_Creature_Pedestal_Crop.gif');
-  background-repeat: no-repeat;
-
-  h4 {
-    line-height: 64px;
-    margin-left: 32px;
-  }
+.boosted {
+  text-align: center;
 }
 
-.creature {
-  margin-top: $margin-s;
+.container {
+  display: flex;
+  background-image: url('../../assets/images/Boosted_Creature_Pedestal_Center.gif');
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: 8px;
+  justify-content: center;
+
+  .img {
+    margin-right: $margin-s;
+    margin-bottom: $margin-xs;
+  }
 }
 
 .subtitle {
