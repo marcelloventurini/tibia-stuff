@@ -5,7 +5,8 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <main>
-        <h1>Guia de Vocações</h1>
+        <h1 className={styles.title}>Guia de Vocações</h1>
+        <hr />
       </main>
       <BoostedSection />
     </div>

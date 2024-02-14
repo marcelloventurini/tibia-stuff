@@ -6,4 +6,19 @@
   gap: $margin-s;
   justify-content: space-between;
   flex-wrap: wrap;
+
+  main {
+    flex: 1;
+  }
+
+  .title {
+    font-size: $title;
+  }
+
+  hr {
+    display: block;
+    margin: 32px auto;
+    border-color: #233664;
+    height: 1px;
+  }
 }
