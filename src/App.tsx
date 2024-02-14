@@ -9,13 +9,11 @@ function App() {
     <BrowserRouter>
       <Header />
 
-      <main>
-        <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='mundos' element={<Worlds />} />
-          <Route path='*' element={<div>Página não encontrada</div>} />
-        </Routes>
-      </main>
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='mundos' element={<Worlds />} />
+        <Route path='*' element={<div>Página não encontrada</div>} />
+      </Routes>
     </BrowserRouter>
   )
 }

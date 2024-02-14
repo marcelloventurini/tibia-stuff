@@ -2,7 +2,7 @@
 
 .container {
   display: flex;
-  padding: $margin-l;
+  padding: $margin-m $margin-l;
   gap: $margin-s;
   justify-content: space-between;
   flex-wrap: wrap;

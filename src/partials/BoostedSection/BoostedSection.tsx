@@ -45,7 +45,7 @@ export default function BoostedSection() {
     return <p>Erro ao carregar dados da API.</p>
 
   return (
-    <section className={styles.boosted}>
+    <aside className={styles.boosted}>
       {boostedBoss ? (
         <Boosted
           image={boostedBoss?.image_url}
@@ -65,6 +65,6 @@ export default function BoostedSection() {
       ) : (
         'Erro ao carregar Criatura do dia'
       )}
-    </section>
+    </aside>
   )
 }
