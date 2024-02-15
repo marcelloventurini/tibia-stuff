@@ -21,4 +21,9 @@
     border-color: #233664;
     height: 1px;
   }
+
+  .menuItems {
+    display: flex;
+    gap: $margin-s;
+  }
 }

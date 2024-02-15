@@ -7,6 +7,13 @@ export default function Home() {
       <main>
         <h1 className={styles.title}>Guia de Vocações</h1>
         <hr />
+
+        <ul className={styles.menuItems}>
+          <li>Druid</li>
+          <li>Knight</li>
+          <li>Paladin</li>
+          <li>Sorcerer</li>
+        </ul>
       </main>
       <BoostedSection />
     </div>
