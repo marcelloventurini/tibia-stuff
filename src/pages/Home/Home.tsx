@@ -21,7 +21,7 @@ export default function Home() {
 
           <div className={styles.dropdown}>
             <button onClick={() => setOpen(!open)} className={styles.dropBtn}>
-              Selecione o conteúdo
+              selecione o conteúdo
             </button>
             {open ? (
               <ul className={styles.dropMenu}>
