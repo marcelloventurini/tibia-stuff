@@ -39,8 +39,8 @@ export default function Home() {
             </button>
             {open ? (
               <ul className={styles.dropMenu}>
-                <li className={styles.dropItem}>opção 1</li>
-                <li className={styles.dropItem}>opção 2</li>
+                <li className={styles.dropItem}>Guia Endgame</li>
+                <li className={styles.dropItem}>Guia de Up</li>
               </ul>
             ) : null}
           </div>
