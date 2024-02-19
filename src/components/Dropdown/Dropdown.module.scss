@@ -1,0 +1,42 @@
+@import '../../styles/variables';
+
+.dropdown {
+  max-height: 48px;
+
+  .dropBtn {
+    width: 352px;
+    max-width: 352px;
+    height: 48px;
+    max-height: 48px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 32px;
+    padding-right: 32px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    color: $font-color;
+    background-image: linear-gradient(to right, #233664, #051122);
+    box-shadow: 4px 4px 4px 2px rgba(0, 0, 0, 0.2);
+  }
+
+  .dropMenu {
+    background-color: #051122;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    margin-top: 4px;
+    border: 1px solid #233664;
+    border-radius: 8px;
+    box-shadow: 4px 4px 4px 2px rgba(0, 0, 0, 0.2);
+
+    .dropItem {
+      cursor: pointer;
+    }
+  }
+}
