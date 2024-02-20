@@ -19,6 +19,13 @@ export default function Home() {
 
           <Dropdown />
         </div>
+
+        <div className={styles.cards}>
+          <div className={styles.card}>Sorcerer - Guia Endgame</div>
+          <div className={styles.card}>Paladin - Guia de Up</div>
+          <div>card 3</div>
+          <div>card 4</div>
+        </div>
       </main>
       <BoostedSection />
     </div>
