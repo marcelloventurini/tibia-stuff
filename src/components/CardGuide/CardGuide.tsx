@@ -14,13 +14,11 @@ export default function CardGuide({
   alt,
 }: CardGuideProps) {
   return (
-    <div className={styles.cards}>
-      <div className={styles.card}>
-        <img src={img} alt={alt} />
-        <span className={styles.text}>
-          {vocation} <br /> {content}
-        </span>
-      </div>
+    <div className={styles.card}>
+      <img src={img} alt={alt} />
+      <span className={styles.text}>
+        {vocation} <br /> {content}
+      </span>
     </div>
   )
 }
