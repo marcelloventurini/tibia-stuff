@@ -1,4 +1,5 @@
 import Sorcerer from '../../assets/images/Sorcerer_artwork.png'
+import CardGuide from '../../components/CardGuide/CardGuide'
 import Dropdown from '../../components/Dropdown/Dropdown'
 import BoostedSection from '../../partials/BoostedSection/BoostedSection'
 import styles from './Home.module.scss'
@@ -21,17 +22,12 @@ export default function Home() {
           <Dropdown />
         </div>
 
-        <div className={styles.cards}>
-          <div className={styles.card}>
-            <img src={Sorcerer} alt='' />
-            <span className={styles.text}>
-              Sorcerer <br /> Guia Endgame
-            </span>
-          </div>
-          <div className={styles.card}>Paladin - Guia de Up</div>
-          <div>card 3</div>
-          <div>card 4</div>
-        </div>
+        <CardGuide
+          img={Sorcerer}
+          alt='Imagem oficial da vocação Sorcerer'
+          vocation='Sorcerer'
+          content='Guia Endgame'
+        />
       </main>
       <BoostedSection />
     </div>
