@@ -33,15 +33,6 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-
-      .menuItems {
-        display: flex;
-        gap: $margin-s;
-
-        li {
-          cursor: pointer;
-        }
-      }
     }
   }
 }

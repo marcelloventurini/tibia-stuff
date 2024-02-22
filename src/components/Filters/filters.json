@@ -1,0 +1,18 @@
+[
+  {
+    "label": "Druid",
+    "id": 1
+  },
+  {
+    "label": "Knight",
+    "id": 2
+  },
+  {
+    "label": "Paladin",
+    "id": 3
+  },
+  {
+    "label": "Sorcerer",
+    "id": 4
+  }
+]

@@ -4,6 +4,7 @@ import Paladin from '../../assets/images/Paladin_artwork.png'
 import Sorcerer from '../../assets/images/Sorcerer_artwork.png'
 import CardGuide from '../../components/CardGuide/CardGuide'
 import Dropdown from '../../components/Dropdown/Dropdown'
+import Filters from '../../components/Filters/Filters'
 import BoostedSection from '../../partials/BoostedSection/BoostedSection'
 import styles from './Home.module.scss'
 
@@ -15,13 +16,7 @@ export default function Home() {
         <hr />
 
         <div className={styles.menu}>
-          <ul className={styles.menuItems}>
-            <li>Druid</li>
-            <li>Knight</li>
-            <li>Paladin</li>
-            <li>Sorcerer</li>
-          </ul>
-
+          <Filters />
           <Dropdown />
         </div>
 
