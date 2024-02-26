@@ -5,7 +5,7 @@ export default function CardGuide() {
   return (
     <>
       {cards.map(card => (
-        <div className={styles.card}>
+        <div className={styles.card} key={card.id}>
           <img src={card.image} alt={card.alt} />
           <span className={styles.text}>
             {card.vocation} <br /> {card.content}
