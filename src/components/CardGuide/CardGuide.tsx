@@ -1,24 +1,17 @@
 import styles from './CardGuide.module.scss'
+import cards from './cards.json'
 
-interface CardGuideProps {
-  img: string
-  vocation: string
-  content: string
-  alt: string
-}
-
-export default function CardGuide({
-  img,
-  vocation,
-  content,
-  alt,
-}: CardGuideProps) {
+export default function CardGuide() {
   return (
-    <div className={styles.card}>
-      <img src={img} alt={alt} />
-      <span className={styles.text}>
-        {vocation} <br /> {content}
-      </span>
-    </div>
+    <>
+      {cards.map(card => (
+        <div className={styles.card}>
+          <img src={card.image} alt={card.alt} />
+          <span className={styles.text}>
+            {card.vocation} <br /> {card.content}
+          </span>
+        </div>
+      ))}
+    </>
   )
 }
