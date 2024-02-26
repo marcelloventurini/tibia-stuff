@@ -3,48 +3,56 @@
     "vocation": "Druid",
     "content": "Guia Endgame",
     "image": "/images/Druid_artwork.png",
-    "alt": "Imagem oficial da vocação Druid"
+    "alt": "Imagem oficial da vocação Druid",
+    "id": 1
   },
   {
     "vocation": "Druid",
     "content": "Guia de Up",
     "image": "/images/Druid_artwork.png",
-    "alt": "Imagem oficial da vocação Druid"
+    "alt": "Imagem oficial da vocação Druid",
+    "id": 2
   },
   {
     "vocation": "Knight",
     "content": "Guia Endgame",
     "image": "/images/Knight_artwork.png",
-    "alt": "Imagem oficial da vocação Knight"
+    "alt": "Imagem oficial da vocação Knight",
+    "id": 3
   },
   {
     "vocation": "Knight",
     "content": "Guia de Up",
     "image": "/images/Knight_artwork.png",
-    "alt": "Imagem oficial da vocação Knight"
+    "alt": "Imagem oficial da vocação Knight",
+    "id": 4
   },
   {
     "vocation": "Paladin",
     "content": "Guia Endgame",
     "image": "/images/Paladin_artwork.png",
-    "alt": "Imagem oficial da vocação Paladin"
+    "alt": "Imagem oficial da vocação Paladin",
+    "id": 5
   },
   {
     "vocation": "Paladin",
     "content": "Guia de Up",
     "image": "/images/Paladin_artwork.png",
-    "alt": "Imagem oficial da vocação Paladin"
+    "alt": "Imagem oficial da vocação Paladin",
+    "id": 6
   },
   {
     "vocation": "Sorcerer",
     "content": "Guia Endgame",
     "image": "/images/Sorcerer_artwork.png",
-    "alt": "Imagem oficial da vocação Sorcerer"
+    "alt": "Imagem oficial da vocação Sorcerer",
+    "id": 7
   },
   {
     "vocation": "Sorcerer",
     "content": "Guia de Up",
     "image": "/images/Sorcerer_artwork.png",
-    "alt": "Imagem oficial da vocação Sorcerer"
+    "alt": "Imagem oficial da vocação Sorcerer",
+    "id": 8
   }
 ]
